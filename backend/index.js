@@ -177,8 +177,8 @@ app.post("/report/create", verify, (req, res, next) => {
             })
             return 0
         }
-
-        let report = new Report({...body, doctor: byUser.user})
+        console.log(byUser)
+        let report = new Report({...body, doctor: byUser.email})
         await report.save()
 
         res.json({
