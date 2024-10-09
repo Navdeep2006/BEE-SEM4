@@ -59,6 +59,10 @@ let signInSchema = zod.object({
     is_doctor: zod.boolean()
 })
 
+let requestUserSchema = zod.object({
+    "email":zod.string().email()
+})
+
 const reportSchema = zod.object({
     user: zod.string().email(),
     date: zod.string(),
@@ -208,6 +212,20 @@ app.get("/reports", verify,
         }
 })
 
+app.get("/user",  (req, res, next) => {SchemaChecker(requestUserSchema, req, res, next)},
+                async (req, res) => {
+                    let email = req.body.email
+
+                    let user = await User.findOne({"email": email})
+                    let newUser =  {"name": user.name,
+                        "email": user.email,
+                        "gender":user.gender, 
+                        "address":user.address,
+                        "DOB": user.DOB,
+                        "is_doctor": user.is_doctor
+                    }
+                    res.json(newUser)
+                 })
 
 app.use((err, req, res) => {
     console.log(err)
