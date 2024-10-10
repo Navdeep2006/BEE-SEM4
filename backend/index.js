@@ -5,6 +5,7 @@ const mongoose = require("mongoose")
 const zod = require('zod')
 const PORT = 3000
 const jwtPass = "123esw345yjnhsyshhsrtvawwetavtw54675"
+const cors = require('cors')
 
 async function verify(req, res, next) {
     let token = req.headers.authorization
@@ -115,7 +116,8 @@ async function exists(email) {
 }
 
 const app = express()
-app.use(express.json())
+app.use(express.json({limit: "10mb"}))
+app.use(cors())
 
 app.post("/user/create", (res, req, next) => {
     SchemaChecker(signUpSchema, res, req, next)
