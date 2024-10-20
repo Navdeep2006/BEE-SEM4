@@ -20,7 +20,7 @@ async function verify(req, res, next) {
     }
 }
 
-mongoose.connect(process.env.ConnString)
+mongoose.connect(process.env.ConnString || "mongodb+srv://pahulgogna24:vYeoATTX8mgMPCm6@cluster0.v2aos.mongodb.net/medscribe?retryWrites=true&w=majority&appName=Cluster0")
 
 const User = mongoose.model("user",{
     name: String,
@@ -119,8 +119,8 @@ const app = express()
 app.use(express.json({limit: "10mb"}))
 app.use(cors())
 
-app.post("/user/create", (res, req, next) => {
-    SchemaChecker(signUpSchema, res, req, next)
+app.post("/user/create", (req, res, next) => {
+    SchemaChecker(signUpSchema, req, res, next)
     }
     , async (req, res) => {
         let data = req.body
@@ -214,7 +214,7 @@ app.get("/reports", verify,
         }
 })
 
-app.get("/user",  (req, res, next) => {SchemaChecker(requestUserSchema, req, res, next)},
+app.post("/user",  (req, res, next) => {SchemaChecker(requestUserSchema, req, res, next)},
                 async (req, res) => {
                     let email = req.body.email
 
