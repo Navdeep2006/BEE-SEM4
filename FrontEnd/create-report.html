@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="create-report.css">
+</head>
+
+<body>
+    <div class="navbar">
+
+        <div class="navbar-left">
+            <img src="MEDSCRIBE.png" alt="Logo"> 
+        </div>
+
+        <div class="navbar-right">
+            <a href="learn-more-about-us.html">About Us</a>
+            <a href="#index-appointment">Appointment</a>
+            <a href="#history">My History</a>
+            <a href="user-data.html">My Account</a>
+        </div>
+    </div>
+
+    <div id="create-user-form">
+        <div class="create-user-form-left" style="width: 50%; overflow: hidden;">
+            <img src="create-user-report.png" style="position: relative; top: 50px;">
+        </div>
+        <div class="create-user-form-right">
+            <h1>Submit Your Information</h1>
+
+            <form  id="report-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="heading">Heading:</label>
+                <input type="text" id="heading" name="heading" placeholder="Enter a heading" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="5" placeholder="Enter a description" required></textarea>
+
+                <label for="pdf" style="font-family: Josefin Sans;">Upload PDF:</label>
+                <input type="file" id="pdf" name="pdf" accept="application/pdf" required>
+
+                <button type="submit" onclick="create_report(event)">Create</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="create-report.js"></script>
+</body>
+</html>

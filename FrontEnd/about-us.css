@@ -1,0 +1,149 @@
+@import url("style.css");
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg); /* Start position */
+    }
+    to {
+        transform: rotate(360deg); /* End position */
+    }
+}
+#about-us-ctn1 {
+    margin-top: 140px;
+    height: 500px;
+    width: 100%;
+    padding: 50px;
+}
+
+#about-us-ctn1 h1 {
+    padding: 10px 0px;
+    text-align: center;
+}
+
+#about-us-ctn1 p {
+    text-align: center;
+    padding: 50px 200px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.about-us-team-ctn {
+    width: 100%;
+    padding-top: 70px;
+    height: auto;
+}
+
+.about-us-team-ctn h1 {
+    text-align: center;
+    padding: 50px;
+}
+
+.about-us-team-ctn img {
+    width: 100%;
+    height: 380px;
+    opacity: 1;
+    object-fit: cover;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px;
+    transition: opacity 0.3s ease;
+}
+
+.about-us-team-ctn-row {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    height: auto;
+    justify-content: space-evenly;
+}
+
+.about-us-team-ctn-row-member {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border-radius: 15px;
+    height: 470px; /* Fixed height */
+    overflow: hidden; /* Ensures contents do not overflow */
+    position: relative; /* For positioning child elements */
+}
+
+.about-us-team-ctn-row-member img {
+    width: 100%;
+    height: 380px;
+    opacity: 1;
+    object-fit: cover;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px;
+    transition: opacity 0.3s ease; /* Transition for opacity */
+}
+
+.about-us-team-ctn-row-member:hover img {
+    opacity: 0.3; /* Image opacity reduced to 30% on hover */
+}
+
+.member-info {
+    padding: 10px;
+    text-align: center;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    transition: all 0.3s ease; /* Add transition for all properties */
+    height: 70px; /* Default height */
+    margin-top: auto; /* Push it to the bottom */
+    background-color: white; /* Optional: Add background for contrast */
+}
+
+.about-us-team-ctn-row-member:hover .member-info {
+    height: 120px; /* Increase height on hover */
+    margin-top: -30px; /* Move upwards on hover */
+}
+
+.member-name {
+    font-size: 1.1rem; 
+    margin: 5px 0; 
+    cursor: pointer;
+    color: #1390e3;
+    text-decoration: none;
+    transition: font-size 0.3s ease; /* Transition for font size */
+}
+
+.about-us-team-ctn-row-member:hover .member-name {
+    font-size: 1.3rem; /* Increase font size on hover */
+}
+
+.member-role {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 5px 0; /* Adjusted margin */
+    transition: font-size 0.3s ease; /* Transition for font size */
+}
+
+.about-us-team-ctn-row-member:hover .member-role {
+    font-size: 1.1rem; /* Increase font size on hover */
+}
+
+.member-description {
+    display: none; /* Initially hidden */
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: 5px; /* Adjusted margin */
+}
+
+.about-us-team-ctn-row-member:hover .member-description {
+    display: block; /* Display on hover */
+}
+.about-us-team-ctn-row-member:hover .member-name {
+    font-size: 1.3rem; /* Increase font size on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #777;
+}

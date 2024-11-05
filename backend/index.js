@@ -148,7 +148,8 @@ app.post("/user/login", (req, res, next) => {
         return 0
     }
     let user = req.dbUser
-    let body = req.body
+
+    console.log(user)
 
     let token = jwt.sign({
         "email": user.email,
@@ -174,6 +175,7 @@ app.post("/report/create", verify, (req, res, next) => {
                 "success": false,
                 "detail":"Only doctors can create reports!"
             })
+            return 0
         }
 
         if(!await exists(body.user)){
@@ -183,7 +185,7 @@ app.post("/report/create", verify, (req, res, next) => {
             })
             return 0
         }
-        console.log(byUser)
+        console.log("by user: ",byUser)
         let report = new Report({...body, doctor: byUser.email})
         await report.save()
 

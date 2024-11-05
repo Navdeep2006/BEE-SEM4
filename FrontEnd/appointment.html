@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="appointment.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+
+        <div class="navbar-left">
+            <img src="MEDSCRIBE.png" alt="Logo"> 
+        </div>
+
+        <div class="navbar-right">
+            <a href="learn-more-about-us.html">About Us</a>
+            <a href="#complains">Complains</a>
+            <a href="#history">My History</a>
+            <a href="#account">My Account</a>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="appointment-container">
+        <div class="appointment-section">
+            <img src="calendar-icon.png" style="width: 50%; margin: 20px 0px;">
+            <h1>Make an Appointment</h1>
+            <div>
+                <button id="reset-btn">Reset</button>
+                <!-- <button>Cancel</button> -->
+            </div>
+        </div>
+    
+        <div class="form-section">
+            <h2>It's Quick & Easy</h2>
+            <form id="appointment-form" action="https://script.google.com/macros/s/AKfycbz30M4HVNI0jSyAAaHmJR1NSK-vXXfQ2hPfKZeUUBRgp25G-n6wXG4tcH6-AD0rmgMd/exec" method="post">
+                <input type="text" name="first_name" placeholder="First Name" required>
+                <input type="text" name="last_name" placeholder="Last Name" required>
+                <input type="text" name="contact" placeholder="Contact" required>
+                <textarea name="message" placeholder="Message"></textarea>
+                <select name="month" required>
+                    <option value="">Select Month</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <select name="day" required>
+                    <option value="">Select Day</option>
+                    <!-- Hard-coding the days from 1 to 31 -->
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+        
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script>
+         document.getElementById('reset-btn').addEventListener('click', function() {
+        document.getElementById('appointment-form').reset();
+        });
+    </script> 
+
+    
+
+  
+      
+</body>
+</html>

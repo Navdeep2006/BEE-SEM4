@@ -1,0 +1,30 @@
+#doc-data-ctn{
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 55px;
+    height: 600px;
+    /* background-color: #f4f4f4; */
+    display: flex;
+}
+#doc-data-ctn img{
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+#doc-data-ctn-btn{
+    position: relative;
+    top: 200px;
+    left: 100px;
+}
+.doc-btn{
+    height: 50px;
+    width: 120px;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    margin-left: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    border: 0px;
+    background-color:#12c36d;
+    border-radius: 5px;
+}

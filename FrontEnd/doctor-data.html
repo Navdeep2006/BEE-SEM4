@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="doctor-data.css">
+</head>
+<body>
+    <div class="navbar">
+
+        <div class="navbar-left">
+            <img src="MEDSCRIBE.png" alt="Logo"> 
+        </div>
+
+        <div class="navbar-right">
+            <a href="learn-more-about-us.html">About Us</a>
+            <a href="#index-appointment">Appointment</a>
+            <a href="#history">My History</a>
+            <a href="user-data.html">My Account</a>
+        </div>
+    </div>
+
+    <div id="doc-data-ctn">
+        <div id="doc-data-ctn-img" style="width: 50%;">
+            <img src="doc-data.png" alt="">
+        </div>
+        <div id="doc-data-ctn-btn" style="min-width: 300px;height: 150px;">
+            <h1 style="text-align: center;margin: 20px; font-size: 55px;">Welcome </h1> 
+            <button class="doc-btn" onclick="ViewReport()">View Report</button>
+            <button class="doc-btn" onclick="CreateReport()">Create report</button>
+        </div>
+    </div>
+
+    <script>
+        function ViewReport(){
+            window.location.href="view-report.html";
+        }
+        function CreateReport(){
+            window.location.href="create-report.html";
+        }
+    </script>
+</body>
+</html>

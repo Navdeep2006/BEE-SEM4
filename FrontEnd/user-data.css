@@ -1,0 +1,120 @@
+h1,h2{
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+
+
+#user-data-ctn{
+    margin-top: 50px;
+    width: 100%;
+    height: 150px;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#user-data-ctn-profile{
+    width: 15%;
+    height: 150px;
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+#user-data-ctn-profile img{
+    height: 40px;
+    width: 40px;
+}
+
+#user-data-ctn-data{
+    /* background-color: black; */
+    width: 80%;
+    height: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+    grid-template-rows: repeat(2, auto); /* Creates 2 rows, auto height */
+    gap: 10px; /* Adds space between items */
+    
+}
+.item {
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+hr{
+    width: 80%;
+    margin:50px auto;
+    background-color: black;
+    height: 3px;
+}
+
+#user-data-ctn-history{
+    margin-top: 50px ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+#user-data-ctn-history-ctn{
+    width:90%;
+    min-height: 150px;
+    max-height: auto;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+}
+#user-data-ctn-history-ctn h3{
+    margin:15px;
+}
+
+#user-datat-logout-btn{
+    height: 30px;
+    width: 120px;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    margin-left: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    border: 0px;
+    background-color: #12c36d;
+    border-radius: 5px;
+}
+#user-data-history-line1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#user-data-history-line2{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+
+}
+#user-data-history-line3{
+    margin: 10px 20px;
+}
+#user-data-history-line3 button{
+    height: 30px;
+    width: 120px;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    margin-left: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    border: 0px;
+    background-color: #12c36d;
+    border-radius: 5px;
+}
+

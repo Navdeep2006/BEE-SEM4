@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="view-report.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="user-data.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="MEDSCRIBE.png" alt="Logo"> 
+        </div>
+        <div class="navbar-right">
+            <a href="index.html">Home</a>
+            <a href="#complains">Complains</a>
+            <a href="#history">My History</a>
+            <a href="user-data.html">My Account</a>
+        </div>
+    </div>
+
+    <h1>Report</h1>
+    <button class="view-rpt-btn" onclick="CreateUser()">create-user</button>
+    <button class="view-rpt-btn-1" onclick="CreateReport()">create-report</button>
+    <div id="user-data-ctn">
+        <div id="user-data-ctn-profile">
+            <img src="img.png">
+            <h3 id="user-name">Navdeep singh</h3>
+            <button id="user-datat-logout-btn" onclick="UserLogout()">LOGOUT</button>
+        </div>
+        <div id="user-data-ctn-data">
+            <div class="item"><h4 id="user-gender">Gender: Male</h4></div>
+            <div class="item"><h4 id="user-DOB">Date of Birth: January 22 2004</h4></div>
+            <div class="item"><h4 id="user-Email">Email: example@example.com</h4></div>
+            <div class="item"><h4 id="user-Address">Address: sadulshahr City</h4></div>
+        </div>
+    </div>
+
+
+    <hr>
+
+    <h2>Medical-History</h2>
+    <div id="user-data-ctn-history">
+        <div id="user-data-ctn-history-ctn" style="margin: auto;">
+            <div id="user-data-history-line1">
+                <h3>DATE: <span>"enter the date"</span></h3>
+                <h3 style="width: 40%;">HEADING:<span>"  enter the text   "</span></h3>
+            </div>
+            <div id="user-data-history-line2">
+                <h3 style="min-width: 30%;">PATIENT'S NAME: <span>"name of doctor"</span></h3> 
+                <h3>DESCRIPTION: <span style="font-size: 15px;">"enter the text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam ducimus quod amet sed corrupti ullam doloremque dignissimos eum saepe iste mollitia vitae porro maxime, laborum quas consectetur exercitationem a quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque at repellat tempora expedita, consequuntur explicabo blanditiis obcaecati, quos impedit itaque unde dolore soluta nisi aut nesciunt ratione. Autem, architecto assumenda! "</span></h3>
+
+
+            </div>
+            <div id="user-data-history-line3">
+                <button><a href="" style="text-decoration: none; color: black;">view image</a></button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="view-report.js"></script>
+</body> 
+</html>

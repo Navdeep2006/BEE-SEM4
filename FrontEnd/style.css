@@ -1,0 +1,711 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #12c36d #ffffff;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Josefin Sans", sans-serif;
+    overflow-x: hidden; /* Prevents horizontal scrollbar */
+
+}
+
+.navbar {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left img {
+    width: 200px;
+    height: auto;
+}
+
+.navbar-right {
+    display: flex;
+    margin-right: 30px;
+}
+
+.navbar-right a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 10px 15px;
+    margin-left: 10px;  
+    font-size: 19px;
+}
+
+.navbar-right a:hover {
+    background-color: #12c36d;
+    border-radius: 5px;
+}
+
+.corner-image {
+    position: absolute;
+    width: 200px; /* Set the size you want for the images */
+    height: auto;
+    overflow: hidden;
+}
+
+.bottom-right { 
+    bottom: 110px;
+    left: 470px;
+    animation: float 3s ease-in-out infinite;
+}
+
+
+
+
+.intro {
+    width: 100%;
+    height: 700px;
+    padding-top: 50px;
+    /* background-color: gainsboro;  */
+}
+
+
+.intro-container {
+    /* background-color: red;    */
+    display: flex;
+    justify-content: center;
+    height: 430px;
+    width: 100%;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.intro-container #left-intro {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-container #left-intro img {
+    width: 400px;
+    height: 390px;
+}
+
+.intro-container #right-intro {
+    padding-top: 50px;
+    width: 50%;
+    height: 100%;
+}
+
+.intro-container #right-intro h1 {
+    margin-top: 70px;
+    font-size: 60px;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 4px;
+}
+
+.intro-container #right-intro h4 {
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    margin: 40px;
+    line-height: 25px;
+}
+
+.intro-btn-container{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-btn{
+    height: 50px;
+    width: 140px;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    margin-left: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    border: 0px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+.intro-btn:hover {
+    background-color: #12c36d;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+    /* --------------get-started--------- */
+
+
+
+
+
+
+.get-started-ctn{
+    width: 100%;
+    height: auto;
+    padding-top: 130px;
+    /* background-color: magenta; */
+}
+
+#get-started-ctn-a{
+    width: 100%;
+    height: 500px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    /* background-color: red; */
+}
+#get-started-con{
+    width: 34%;
+    height: auto;
+    /* background-color: green; */
+    border-radius: 15px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.get-started-img-ctn{
+    margin: 20px 0px;
+    width: 100%;
+    height: 400px;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#get-started-img{
+    width: 78%;
+}
+#get-started-ctn-a button{
+    height: 50px;
+    width: 210px;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    margin-left: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    border: 0px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+#get-started-ctn-a button a{
+    text-decoration: none;
+    color: black;
+}
+#get-started-ctn-a button:hover {
+    background-color: #12c36d;
+}
+
+
+
+
+/* --------index continuation-------- */
+
+
+
+
+#index-ctn1{
+    width: 100%;
+    height: 500px;
+    /* background-color: #12c36d; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 80px;
+}
+
+.index-ctn1-div{
+    width: 20%;
+    height: 350px;
+    border-radius: 65px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    transition: background 1s ease;
+    align-items: center;
+    padding-top: 40px; 
+}
+
+.index-ctn1-div:hover{
+    background: linear-gradient(to top, 
+    #28c77a 0%, 
+    rgb(248, 248, 248) 50%, 
+    #f4f4f4 50%);
+
+    box-shadow: 4 px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.index-ctn1-div-img{
+    width: 30%;
+}
+.index-ctn1-div h2{
+    text-align: center;
+    margin: 20px;
+    font-size: 28px;
+}
+.index-ctn1-div h4{
+    
+    margin:0px 15px ;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+
+
+
+/* --------------about--------------- */
+
+
+
+#index-about{
+    margin-top: 50px;
+    width: 100%;
+    height: 600px;
+    /* background-color: gainsboro; */
+    /* padding-top: 50px; */
+}
+#index-ctn-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#index-ctn-about-left{
+    width: 40%;
+    height: auto;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+#about-img-left{
+    width: 40%;
+    height: 400px;
+}
+#about-img-doc{
+    width: 40%;
+    animation: float2 4s ease-in-out infinite;
+
+}
+#index-ctn-about-right{
+    width: 60%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    /* background-color: green; */
+}
+.index-ctn-about-right-item{
+    width: 85%;
+    background-color: #f4f4f4;
+    height: 100px;
+    border-radius: 45px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+.index-ctn-about-right-item-left{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:green; */
+}
+.index-ctn-about-right-item-right{
+    width: 80%;
+    height: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.index-ctn-about-right-item img{
+    width: 85%;
+}
+
+
+
+/* --------------quick-connect--------------- */
+
+
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 55px;
+}
+
+
+
+.contact-image {
+    width: 120px; 
+    height: 120px;
+    border-radius: 50px;
+    margin-bottom: 10px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    position: relative; 
+    top: -20px; 
+}
+
+
+
+.contact-info {
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-item i {
+    font-size: 24px;
+    color: #000000;
+    margin-right: 10px;
+}
+
+.contact-details p:first-child {
+    font-weight: bold;
+}
+
+.contact-form {
+    width: 60%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 25px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    background-color: #fff;
+}
+
+.contact-form button {
+    background-color: #12c36d;
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #000000;
+}
+
+
+
+
+/* ------------------appointment-------------------- */
+#index-appointment { 
+    width: 100%;
+    height: auto; /* Allow content to define height */
+    padding: 50px 0; /* Add top-bottom padding for breathing space */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 50px;
+    /* flex-wrap: wrap;  */
+}
+
+#index-appointment-ctn-img {
+    width: 30%;
+    max-height: 80%;
+    border-radius: 20px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#index-appointment-ctn-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    /* background-color: yellow; */
+}
+
+#index-appointment-ctn-head {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    /* background-color: red; */
+    text-align: center; 
+    transform: translateY(-50px);
+}
+
+#index-appointment-ctn-head h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#index-appointment-ctn-head p {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#index-appointment-ctn-head button {
+    width: 200px;
+    height: 40px;
+    background-color: #12c36d;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;  
+    text-align: center;
+}
+
+#index-appointment-ctn-head button:hover {
+    background-color: #000000;
+}
+
+#index-appointment-ctn-head a {
+    color: #fff;
+    text-decoration: none; 
+    display: block;
+    height: 100%;
+}
+
+        /* cutomers say  */
+
+
+
+.slider-container {
+    position: relative;
+    width: 60%;
+    margin: 150px auto;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color:#f4f4f4;
+
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    padding: 20px;
+    padding-left: 50px;
+    align-items: center;
+}
+
+.slide img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.review {
+    max-width: 70%;
+}
+
+.review h3 {
+    margin: 0;
+    color: #333;
+}
+
+.review p {
+    color: #777;
+}
+
+.stars {
+    color: #ffbf00;
+    font-size: 20px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    padding: 20px;
+    z-index: 10;
+}
+
+.arrow.left {
+    left: -10px;
+}
+
+.arrow.right {
+    right: 0;
+}
+
+/*-----------newsletter----------*/
+
+/* Newsletter Container */
+.newsletter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin: 150px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Newsletter Content Section */
+.newsletter-content h2 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+}
+
+.newsletter-content p {
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Newsletter Form Section */
+.newsletter-form {
+    display: flex;
+    align-items: center;  /* Ensures vertical alignment */
+    gap: 10px;
+}
+
+#email {
+    margin-top: 15px;
+    padding: 12px;  /* Adjust padding for proper height */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    font-size: 1rem;
+    font-family: "Josefin Sans", sans-serif;
+    color: #777;
+    width: 400px;
+}
+
+#join-btn {
+    padding: 12px 20px;  /* Matching the height of the input */
+    background-color: #12c36d;
+    color: white;
+    border: none;
+    font-family: "Josefin Sans", sans-serif;
+
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#join-btn:hover {
+    background-color: #0ea358;
+}
+
+
+
+    /* -----------footer----------- */
+
+
+
+
+
+footer {
+    background-color: #f4f4f4;
+    /* color: white; */
+    text-align: center;
+    padding: 40px 0;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+
+.footer-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.footer-content p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
+}
+
+.socials li {
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.socials li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.socials li a:hover {
+    color: #12c36d;
+}
+
+
+
